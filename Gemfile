@@ -34,6 +34,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.8"
 
-source "https://rubygems.pkg.github.com/just-the-docs" do
-  gem "just-the-docs", "0.8.1"
-end
+gem "just-the-docs", "0.8.1"
