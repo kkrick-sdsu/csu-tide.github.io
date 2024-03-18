@@ -98,8 +98,10 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
 nav_external_links:
-  - title: TIDE
+  - title: TIDE Website
     url: https://tide.sdsu.edu/
+  - title: TIDE YouTube
+    url: https://www.youtube.com/@CSUTIDE
 
 # Footer content
 # appears at the bottom of every page's main content
