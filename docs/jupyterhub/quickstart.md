@@ -19,4 +19,4 @@ This page is currently under construction. Information will be updated soon.
 
 JupyterHub is the latest web-based interactive development environment for notebooks, code, and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. Languages such as Python, R, and Julia are available along with Pandas, PyTorch, and TensorFlow libraries.
 
-[Launch JupyterHub](https://sdsu-jupyterhub.nrp-nautilus.io/){: .btn .btn-green }{:target="_blank"}
+[Launch JupyterHub](https://csu-tide-jupyterhub.nrp-nautilus.io/){: .btn .btn-green }{:target="_blank"}
