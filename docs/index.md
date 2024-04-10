@@ -34,7 +34,7 @@ Users can request access by submitting a [TIDE Contact Us form](https://tide.sds
 
 Once you have been granted access, you can click the button below and authenticate with your institution-specific credentials.
 
-[Launch JupyterHub](https://jupyterhub-research.sdsu.edu){: .btn .btn-green }{:target="_blank"}
+[Launch JupyterHub](https://csu-tide-jupyterhub.nrp-nautilus.io){: .btn .btn-green }{:target="_blank"}
 
 ## Batch / Long Running Jobs
 In addition to the JupyterHub, more complex jobs can be created and run as software containers directly on the TIDE cluster.
