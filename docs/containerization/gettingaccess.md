@@ -68,11 +68,7 @@ Congratulations! You now have an NRP account and you're one step closer to runni
 ## Requesting Access to a Namespace
 Now that you have signed into the NRP Portal, the TIDE team can add you to a namespace which will allow you to run containers on TIDE.
 
-Submit the [TIDE Contact Us form](https://tide.sdsu.edu/contact/){:target="_blank"} ServiceNow form with the following:
-1. Request Type should be "TIDE Containerization"
-2. In the "Please provide a description of your request" indicate the name of the namespace you want created, or specify an existing one you wish to be added to
-    - Note: All namespaces will be pre-fixed with "tide-"
-3. Click Request
+Submit the [TIDE Support form](https://tide.sdsu.edu/contact/){:target="_blank"} with the request type as "Namespace Access or Issue".
 
 After you submit the form a member of the TIDE team will follow up and add you to the desired namespace.
 

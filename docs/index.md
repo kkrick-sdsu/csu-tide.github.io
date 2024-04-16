@@ -29,16 +29,14 @@ JupyterHub is the latest web-based interactive development environment for noteb
 Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning. 
 Languages such as Python, R, and Julia are available along with Pandas, PyTorch, and TensorFlow libraries.
 
-### Getting Access
-Users can request access by submitting a [TIDE Contact Us form](https://tide.sdsu.edu/contact/){:target="_blank"} with the Request Type of "Access to Existing Cyberinfrastructure" and sharing a few sentences about how they plan to use TIDE.
-
-Once you have been granted access, you can click the button below and authenticate with your institution-specific credentials.
+## Getting Access
+Learn more about getting access at [Using TIDE](https://tide.sdsu.edu/usingtide/). Once a support form has been submitted and received, navigate to the JupyterHub environment with the button below.
 
 [Launch JupyterHub](https://csu-tide-jupyterhub.nrp-nautilus.io){: .btn .btn-green }{:target="_blank"}
 
 ## Batch / Long Running Jobs
 In addition to the JupyterHub, more complex jobs can be created and run as software containers directly on the TIDE cluster.
-Navigate to the [Quickstart](./kubectl/) is available to assist faculty and researchers with software containerization. 
-Requests for batch access to TIDE can be made by submitting the [TIDE Contact Us form](https://tide.sdsu.edu/contact/).
+Navigate to the [containerization Quickstart](./containerization/gettingaccess) to learn how to run containerized software on TIDE. 
+Requests for batch access to TIDE can be made by submitting a [TIDE Support form](https://tide.sdsu.edu/usingtide/).
 
 *TIDE is supported by the Research & Cyberinfrastructure group within the IT Division. TIDE is funded by [NSF Award #2346701](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2346701)*

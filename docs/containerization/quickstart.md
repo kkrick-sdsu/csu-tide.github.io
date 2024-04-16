@@ -153,7 +153,7 @@ At this point the pod is running our container and is executing the command spec
 ### Accessing the Pod
 Now that the pod is running, let's get a bash shell on the container running in the pod:
 
-1. Tell Kuberenetes to launch an interactive shell session using the bash shell
+1. Tell Kubernetes to launch an interactive shell session using the bash shell
     - `kubectl exec -it hello-pod -n $ns -- /bin/bash`
     - You should see output similar to the following:
     ```bash
@@ -244,7 +244,7 @@ Follow these steps using the terminal in your Kube Notebook:
     No resources found in sdsu-joaquinmendoza namespace.
     ```
 
-Now, as you might recall, we said that pods are ephemeral and everything in them get deleted once the pod is deleted. Just to illustrate that point, let's schedule the pod again and attach a bash shell to it.
+Now, as you might recall, we said that pods are ephemeral and everything in them gets deleted once the pod is deleted. Just to illustrate that point, let's schedule the pod again and attach a bash shell to it.
 
 1. `kubectl -n $ns apply -f hello-pod.yaml`
 1. `kubectl -n $ns exec -it hello-pod -- /bin/bash`
