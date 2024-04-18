@@ -8,10 +8,6 @@ description: ""
 permalink: /jupyterhub/quickstart
 ---
 
-{: .note }
-This page is currently under construction. Information will be updated soon.
-
-
 # Prerequisites
 - Complete all steps in the [Getting Access](./gettingaccess) walk-through.
 
