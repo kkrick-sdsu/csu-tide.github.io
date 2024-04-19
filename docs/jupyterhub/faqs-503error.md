@@ -8,9 +8,6 @@ description: ""
 permalink: /jupyterhub/faqs/503error
 ---
 
-{: .note }
-This page is currently under construction. Information will be updated soon.
-
 # Resolving a 503 Error
 Sometimes, users may encounter a 503 error when attempting to launch a server.
 

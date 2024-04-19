@@ -8,9 +8,6 @@ description: ""
 permalink: /jupyterhub/faqs/serverunavailable
 ---
 
-{: .note }
-This page is currently under construction. Information will be updated soon.
-
 # *Server unavailable or unreachable* Error
 Sometimes, users may encounter a *Server unavailable or unreachable* error. This is often caused by the following:
 1. Server timeout due to user inactivity (reopening yesterday's tab of JupyterLab)
