@@ -12,7 +12,7 @@ permalink: /jupyterhub/faqs/diskquota
 
 Each user is provided 50 GB (gigabytes) of storage accessible from within JupyterHub. This storage is provisioned the first time you access JupyterHub and will be deleted one semester after your last active course. If you wish to retain your data, it's highly recommended that you make regular [backups](/jupyterhub/faqs/spacemanagement#back-up-to-a-zip-archive).
 
-To check how much of your 20 GB you are consuming:
+To check how much of your 50 GB you are consuming:
 
 1. From the **Launcher** page select **Terminal**.
 ![Launch Terminal](/images/jupyterhub/faq-space1.png)

@@ -8,9 +8,6 @@ description: ""
 permalink: /jupyterhub/faqs/stopnotebook
 ---
 
-{: .note }
-This page is currently under construction. Information will be updated soon.
-
 # Manually Stop Notebook
 If you wish to terminate a Jupyter Notebook in order to modify server options such as CPU/GPUs, the container image, or for any other reason, please follow the two steps below.
 
