@@ -89,7 +89,7 @@ Follow these steps to get a copy of the repo cloned to your local machine and th
     containers:
     - name: hellopod
         image: ghcr.io/csu-tide/hello-csu:main
-        resources:
+        resources:  # NOTE: CPU/RAM limit may not exceed 1.2x (20%) of request size
         limits:
             memory: 100Mi
             cpu: 100m
