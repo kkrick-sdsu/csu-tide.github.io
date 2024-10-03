@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Getting Access
-parent: Containerization
-nav_order: 2
+parent: Batch Jobs
+nav_order: 10
 description: ""
-permalink: /containerization/gettingaccess
+permalink: /batch-jobs/getting-access
 ---
 
 {: .note }
@@ -20,31 +20,31 @@ The National Research Platform (NRP) portal will automatically create you an acc
 
 1. Navigate to [https://portal.nrp-nautilus.io/](https://portal.nrp-nautilus.io/)
 1. Click Login in the top right corner
-  - ![Nautilus Portal webpage](/images/containerization/gettingaccess1.png)
+  - ![Nautilus Portal webpage](/images/batch-jobs/gettingaccess1.png)
 1. You will be greeted by a CILogon page
-  - ![CILogon webpage](/images/containerization/gettingaccess2.png)
+  - ![CILogon webpage](/images/batch-jobs/gettingaccess2.png)
 1. Click the dropdown in the Identity Provider section and search for your institution
-  - ![Search Your Institution](/images/containerization/gettingaccess3.png)
+  - ![Search Your Institution](/images/batch-jobs/gettingaccess3.png)
 1. Click the checkbox for "Remember this selection"
-  - ![Check remember this selection](/images/containerization/gettingaccess4.png)
+  - ![Check remember this selection](/images/batch-jobs/gettingaccess4.png)
 1. Click Log On
-  - ![Log on](/images/containerization/gettingaccess5.png)
+  - ![Log on](/images/batch-jobs/gettingaccess5.png)
 1. You will be greeted by a login page
-  - ![Institution Login page](/images/containerization/gettingaccess6.png)
+  - ![Institution Login page](/images/batch-jobs/gettingaccess6.png)
 1. Enter your CSU-specific credentials
-  - ![Institution credentials](/images/containerization/gettingaccess7.png)
+  - ![Institution credentials](/images/batch-jobs/gettingaccess7.png)
 1. Click Login
-  - ![Institution Login](/images/containerization/gettingaccess8.png)
+  - ![Institution Login](/images/batch-jobs/gettingaccess8.png)
 1. Complete any multi-factor authentication (if prompted)
-  - ![DUO Push Notification](/images/containerization/gettingaccess9.png)
+  - ![DUO Push Notification](/images/batch-jobs/gettingaccess9.png)
 1. You should now be redirected to the NRP Portal and you should see your CSU email in the top right corner
   - Note: You may not see as many options in the top navigation, as the screenshot below is from an admin account
-  - ![Signed in NRP Portal](/images/containerization/gettingaccess10.png)
+  - ![Signed in NRP Portal](/images/batch-jobs/gettingaccess10.png)
 1. Read and accept the Acceptable Use Policy (AUP) at the home page
   - Note: You'll need to re-accept this policy every 12 months to maintain your access
-  - ![Nautilus Portal AUP](/images/containerization/gettingaccess14.png)
+  - ![Nautilus Portal AUP](/images/batch-jobs/gettingaccess14.png)
 1. Verify that you've agreed to the AUP
-  - ![Nautilus Portal AUP Accepted](/images/containerization/gettingaccess15.png)
+  - ![Nautilus Portal AUP Accepted](/images/batch-jobs/gettingaccess15.png)
 
 Congratulations! You now have an NRP account and you're one step closer to running containers.
 
@@ -52,12 +52,12 @@ Congratulations! You now have an NRP account and you're one step closer to runni
 1. [Peruse the namespaces](https://portal.nrp-nautilus.io/namespaces-g)
     - It may be easiest to use your browser's find tool (ctrl + f / cmd + f)
     - Search for "tide-" to see TIDE related namespaces
-        - ![TIDE Namepaces](/images/containerization/gettingaccess12.png)
+        - ![TIDE Namepaces](/images/batch-jobs/gettingaccess12.png)
 
 1. [Download your kube config](https://portal.nrp-nautilus.io/authConfig)
     - You will need to sign in with CILogon again
     - The file should download and you should see the following screen
-        - ![kube config file](/images/containerization/gettingaccess13.png)
+        - ![kube config file](/images/batch-jobs/gettingaccess13.png)
     - Open your terminal and run the following command:
         - `mkdir ~/.kube`
     - Copy your config file into the ~/.kube folder (replace the path below for your config file):

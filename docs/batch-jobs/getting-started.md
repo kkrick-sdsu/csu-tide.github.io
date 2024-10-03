@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Quickstart
-parent: Containerization
-nav_order: 1
+title: Getting Started
+parent: Batch Jobs
+nav_order: 20
 has_children: false
 description: ""
-permalink: /containerization/quickstart
+permalink: /batch-jobs/getting-started
 ---
 
 {: .note }
