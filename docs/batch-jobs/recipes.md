@@ -2,7 +2,7 @@
 layout: default
 title: Batch Job Recipes
 parent: Batch Jobs
-nav_order: 20
+nav_order: 30
 has_children: false
 description: ""
 permalink: /batch-jobs/recipes
