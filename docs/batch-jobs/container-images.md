@@ -27,4 +27,4 @@ For other container image registries, it is important to research the container 
 
 ## Creating Custom Container Images
 If you find that the software you need is not already in an available container image, then you can create a custom container image.
-For more on this topic, check out our [container creation]() section.
+For more on this topic, check out our [Container Creation](/container-creation) section.
