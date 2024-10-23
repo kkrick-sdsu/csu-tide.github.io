@@ -270,6 +270,7 @@ Congratulations! You've run your first batch job on TIDE as a pod, run a program
 With that, you have the basics to be able to run batch jobs on TIDE.
 
 ## Next Steps
+Now that you have a foundation for using batch jobs on TIDE, you can peruse our [batch job recipes](/batch-jobs/recipes).
+The recipes are designed to accomplish specific tasks on TIDE and to provide a base that you can modify for your own purposes.
 
-
-You can also check out the [National Research Platform's documentation](https://docs.nationalresearchplatform.org/) which has some good examples.
+You can also check out our [Common Tasks and Troubleshooting](/batch-jobs/tasks-troubleshooting) guide.

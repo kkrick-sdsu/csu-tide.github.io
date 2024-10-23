@@ -4,7 +4,7 @@ title: Batch Jobs Overview
 parent: Batch Jobs
 nav_order: 1
 description: ""
-permalink: /batch-jobs
+permalink: /batch-jobs/
 ---
 
 # Batch Jobs on TIDE
@@ -16,7 +16,7 @@ Users wishing to run batch jobs on TIDE will need to [install Kubectl locally](h
 
 Kubernetes only runs software containers, so software must be "containerized" before it can be run in a batch job.
 Often you may find that the software that your code relies on already has a container.
-For more information on containerization, including creating custom containers, please check out the containerization section.
+For more information on containerization, including creating custom containers, please check out the [Container Creation](/container-creation) section of our documentation.
 
 ## Context for Containers and Kubernetes
 At a high-level, containers are packaged software applications containing all of their dependencies like the operating system (OS), file structures, configuration and other code libraries.
@@ -65,6 +65,8 @@ The NRP has also implemented additional logic and limitations on top of the foun
 | **Automatic restart**        | No, wll not be restarted automatically in cases such as the node being restarted or otherwise going offline | Yes, will be restarted automatically in cases such as the node being restarted or otherwise going offline | Yes, will be restarted automatically in cases such as the node being restarted or otherwise going offline |
 
 ## Next Steps
-In order to schedule batch jobs on TIDE, you must first complete the steps in the [getting access](/batch-jobs/getting-access) guide.
-Once you have completed those steps and been granted access, you can continute onto the [getting started](/batch-jobs/getting-started) guide.
-After completing the getting started guide, you can experiment with customizing our [batch job recipes](/batch-jobs/recipes).
+In order to schedule batch jobs on TIDE, you must first complete the steps in the [Getting Access](/batch-jobs/getting-access) guide.
+
+Once you have completed those steps and been granted access, you can continute onto the [Getting Started](/batch-jobs/getting-started) guide.
+
+After completing the getting started guide, you can experiment with customizing our [Batch Job Recipes](/batch-jobs/recipes).
