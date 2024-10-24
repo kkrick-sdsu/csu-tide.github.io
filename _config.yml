@@ -100,6 +100,8 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 nav_external_links:
   - title: TIDE Website
     url: https://tide.sdsu.edu/
+  - title: TIDE GitHub
+    url: https://github.com/csu-tide
   - title: TIDE YouTube
     url: https://www.youtube.com/@CSUTIDE
 
