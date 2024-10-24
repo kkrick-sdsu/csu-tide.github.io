@@ -8,9 +8,12 @@ description: ""
 permalink: /jupyterhub/gettingstarted
 ---
 
+{: .note }
+This page is currently under construction. Information will be updated soon.
+
 # Prerequisites
 This documentation assumes that you have:
-- Completed all steps in the [Getting Access](./gettingaccess) walk-through.
+- Completed all steps in the [Getting Access](./gettingaccess) walk-through
 
 ## Logging In
 If you haven't done so already, navigate to JupyterHub at the [Getting Access](./gettingaccess) page and login using your institution email.
@@ -18,7 +21,8 @@ If you haven't done so already, navigate to JupyterHub at the [Getting Access](.
 ## Getting Started
 1. Review the [Server Options](./faqs-serveroptions) page to select the appropriate resources for your use-case
 1. Launch JupyterHub from the [Quickstart](./quickstart) page
-1. Start coding!
+    - **Note**: Refer to external campus-specific JupyterHub launch instructions if applicable
+1. Happy coding!
 
 ## Using JupyterLab
 JupyterLab is a versatile interactive development environment (IDE) widely used for computing and research across various disciplines. It allows users to create and manage Jupyter notebooks, code, and data visualizations in a single interface. TIDE users perform research and develop code in this simple, yet powerful browser-based IDE. 

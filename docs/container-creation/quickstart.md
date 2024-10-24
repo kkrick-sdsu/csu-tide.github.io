@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Containers Quickstart
+title: Quickstart
 parent: Container Creation
 nav_order: 10
 has_children: false
