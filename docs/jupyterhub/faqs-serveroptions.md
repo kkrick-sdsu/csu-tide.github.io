@@ -39,3 +39,9 @@ A **CPU core** is one of many small, yet powerful workers within a **CPU (Centra
 - Big Data Analytics *(e.g. data mining)*
 - Geospatial Analysis and Remote Sensing *(e.g. land cover classification)*
 
+### Images
+When using JupyterHub, researchers can choose from a variety of pre-built images that contain different combinations of software packages and dependencies. But, what is an "image"?
+
+A **(container) image** is like a "ready-to-go box" that contains everything needed to run a program, including software, tools, configurations. TIDE leverages these images to provide individual pre-built environments containing a suite of software packages for tasks like machine learning, genomics, and more.
+
+The *Images* option in the Server Options page allows researchers to quickly spin up a customized computing environment without having to manually install and configure each software package themselves. This saves time and reduces the risk of configuration errors or conflicts between packages.
