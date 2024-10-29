@@ -5,15 +5,12 @@ parent: Container Creation
 nav_order: 10
 has_children: false
 description: ""
-permalink: /container-creation/quickstart
+permalink: /container-creation/
 ---
-
-{: .note }
-This page is currently under construction. Information will be updated soon.
 
 # Prerequisites
 - [Docker Hub](https://app.docker.com/signup){:target="_blank"} Account
-- [Docker](https://docs.docker.com/engine/install/){:target="_blank"} installed locally
+- [Docker](https://docs.docker.com/engine/install/){:target="_blank"} and [Git](https://git-scm.com/downloads){:target="_blank"} installed locally
 - Familiarity with the Linux terminal
 - Familiarity with text editors (vi, emacs, etc.)
 
@@ -29,7 +26,7 @@ Containers offer many benefits but here we list a few of the most impactful ones
     - The same container given the same input will produce the same output.
 
 {: .note }
-Docker must be installed on your local machine to proceed. Learn how to install Docker [here](https://docs.docker.com/engine/install/){:target="_blank"}
+Docker must be installed on your local machine to proceed. Learn how to [install Docker](https://docs.docker.com/engine/install/){:target="_blank"}
 
 ## Steps to Run a Container
 

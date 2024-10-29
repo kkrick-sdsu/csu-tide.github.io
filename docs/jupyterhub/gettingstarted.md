@@ -2,33 +2,31 @@
 layout: default
 title: Getting Started
 parent: JupyterHub
-nav_order: 2
+nav_order: 3
 has_children: false
 description: ""
 permalink: /jupyterhub/gettingstarted
 ---
 
-{: .note }
-This page is currently under construction. Information will be updated soon.
+# Getting Started
 
-# Prerequisites
+## Prerequisites
 This documentation assumes that you have:
-- Completed all steps in the [Getting Access](./gettingaccess) walk-through
+- Completed all steps in the [Getting Access](/jupyterhub/gettingaccess) walk-through
 
 ## Logging In
-If you haven't done so already, navigate to JupyterHub at the [Getting Access](./gettingaccess) page and login using your institution email.
+If you haven't done so already, navigate to the appropriate JupyterHub at the [Getting Access](/jupyterhub/gettingaccess) page and login using your institution email.
 
-## Getting Started
-1. Review the [Server Options](./faqs-serveroptions) page to select the appropriate resources for your use-case
-1. Launch JupyterHub from the [Quickstart](./quickstart) page
-    - **Note**: Refer to external campus-specific JupyterHub launch instructions if applicable
-1. Happy coding!
+## Starting JupyterHub
+1. Review the [Server Options](/jupyterhub/faqs/serveroptions) page to select the appropriate resources for your use-case
+    - *Note*: Refer to external campus-specific JupyterHub launch instructions if applicable
+1. Launch appropriate JupyterHub from the [Getting Access](/jupyterhub/gettingaccess) page
+1. Complete the Server Options form
+1. Click "Start"
+1. Happy Coding!
 
-## Using JupyterLab
-JupyterLab is a versatile interactive development environment (IDE) widely used for computing and research across various disciplines. It allows users to create and manage Jupyter notebooks, code, and data visualizations in a single interface. TIDE users perform research and develop code in this simple, yet powerful browser-based IDE. 
-
-For those unfamiliar with JupyterLab, refer to these resources: 
-- [JupyterLab Interface](https://www.datacamp.com/tutorial/installing-jupyter-notebook#:~:text=DataCamp%20tutorial.-,JupyterLab%20Interface,-JupyterLab%20interface%20is){:target="_blank"}
-- [JupyterLab Getting Started](https://jupyterlab.readthedocs.io/en/latest/getting_started/overview.html){:target="_blank"}
-
-Otherwise, continue to the [Quickstart](./quickstart) instructions.
+## Next Steps
+Once you've successfully launched JupyterHub, navigate to the [Quickstart](/jupyterhub/quickstart) page to begin working with real code examples that leverage TIDE hardware such as:
+- [Object Detection](https://github.com/csu-tide/jupyter-quickstarts/blob/main/computer-vision/roboflow.ipynb){:target="_blank"} with Roboflow
+- [LLM Inference](https://github.com/csu-tide/jupyter-quickstarts/blob/main/llms/ollama-llm-quick-start.ipynb){:target="_blank"} with Ollama
+- [Retrieval Augmented Generation (RAG)](https://github.com/csu-tide/jupyter-quickstarts/blob/main/RAG/RAG_Solution.ipynb){:target="_blank"} with LangChain

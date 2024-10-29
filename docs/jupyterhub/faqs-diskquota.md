@@ -10,9 +10,9 @@ permalink: /jupyterhub/faqs/diskquota
 
 # Check Disk Quota
 
-Each user is provided 50 GB (gigabytes) of storage accessible from within JupyterHub. This storage is provisioned the first time you access JupyterHub and will be deleted one semester after your last active course. If you wish to retain your data, it's highly recommended that you make regular [backups](/jupyterhub/faqs/spacemanagement#back-up-to-a-zip-archive).
+Each user is granted a finite amount of persistent storage space accessible in JupyterHub at the home directory `/home/jovyan` (and across each project that you may be using JupyterHub). For an exact amount, please reference the appropriate JupyterHub information on the [Getting Access](/jupyterhub/gettingaccess) page.
 
-To check how much of your 50 GB you are consuming:
+To check how much of your persistent home directory storage that you are consuming:
 
 1. From the **Launcher** page select **Terminal**.
 ![Launch Terminal](/images/jupyterhub/faq-space1.png)

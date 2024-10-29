@@ -10,13 +10,11 @@ permalink: /jupyterhub/faqs/spacemanagement
 
 # Disk Space Management
 
-Each user is granted 50 GB (gigabyte) of storage space accessible in JupyterHub. This space is shared by all container images you launch, and across each course you may be using JupyterHub. You can check your [disk usage](/jupyterhub/faqs/diskquota) to get an idea of how much free space you have available.
-
-All files will be removed at the end of the following semester after your last active course. For access not associated with a course, the files will be removed when your CSU email is deprovisioned.
+Each user is granted a finite amount of persistent storage space accessible in JupyterHub at the home directory `/home/jovyan`. For an exact amount, please reference the appropriate JupyterHub information on the [Getting Access](/jupyterhub/gettingaccess) page.
 
 ## Upload/Download Files
 
-The JupyterHub File Manager can be used to mange files and folders. This includes uploading, downloading, renaming, and deleting files. You can also create and delete directories and move files between directories. If you are comfortable with the Terminal (command line) you can also use it to manage your files. You will find your files in the `/home/jovyan` directory. This is considered your home directory.
+The JupyterHub File Manager can be used to mange files and folders. This includes uploading, downloading, renaming, and deleting files. You can also create and delete directories and move files between directories. If you are comfortable with the Terminal (command line) you can also use it to manage your files.
 
 ### Upload Files
 
@@ -33,7 +31,7 @@ From the File Manager, right click a file, or files, and select **Download**. Th
 ![Download Files](/images/jupyterhub/faq-space4.png)
 
 {: .note }
-You can not download directories. If you wish to download a directory, consider creating a zip archive.
+You cannot download directories. If you wish to download a directory, consider creating a zip archive.
 
 ## Back Up to a Zip Archive
 
