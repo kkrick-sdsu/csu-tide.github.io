@@ -24,11 +24,14 @@ JupyterHub is the latest web-based interactive development environment for noteb
 Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism, and machine learning.
 Languages such as Python, R, and Julia are available along with Pandas, PyTorch, and TensorFlow libraries.
 
+
 [JupyterHub Info](/jupyterhub){: .btn .btn-green }{:target="_blank"}
+
 
 ## Batch Jobs
 In addition to the JupyterHub instance, batch jobs can be created and run as software containers directly on the TIDE cluster.
 Batch jobs allow for longer running jobs as well as parallelization of jobs.
+
 
 [Batch Jobs Info](/batch-jobs){: .btn .btn-green }{:target="_blank"}
 
@@ -48,6 +51,7 @@ TIDE has 3 storage nodes that are configured as a Ceph cluster with triple repli
 | GPU-Advanced    | 1        | PowerEdge R750XA<br />(2x) Intel Xeon Gold 6338 2G CPU, 32C/64T<br/>(4x) NVIDIA A100 GPU, 80 GB RAM<br/>512 GB System RAM |
 | CPU          | 6        | PowerEdge R760<br/>(2x) Intel Xeon Gold 6430 2.1G, 32C/64T <br/> 768 GB System RAM |
 | Storage      | 3        | PowerEdge R760<br/> (3x) Intel Xeon Gold 6442Y 2.6G, 24C/48T <br/> 240 TB Storage<br/>256 GB System RAM |
+
 
 *TIDE is funded by [NSF Award #2346701](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2346701){:target="_blank"}.
 TIDE is integrated with the [National Research Platform](https://nationalresearchplatform.org/){:target="_blank"}.*
