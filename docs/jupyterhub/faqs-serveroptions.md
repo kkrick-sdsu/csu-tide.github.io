@@ -9,18 +9,18 @@ description: ""
 permalink: /jupyterhub/faqs/serveroptions
 ---
 
-{: .note }
-This page is currently under construction. Information will be updated soon.
-
 # Server Options Page
 When starting a new notebook from the Server Options page, there are many options to consider. What do these options mean and how does one select them appropriately? <br>
+
+{: .note }
+**Disclaimer**: This information focuses on the CSU TIDE JupyterHub. Refer to campus-specific information in [Getting Access](/jupyterhub/gettingaccess) as appropriate.
 
 ![Server Options Page](/images/jupyterhub/faq-serveroptions1.png)
 
 # GPUs, CPU Cores, and RAM
 Let's explain what GPUs, CPU Cores, and RAM are and how they can be useful in the context of research and instruction. 
 
-A **GPU (Graphical Processing Unit)** is a specialized processor designed to perform many simple calculations in parallel. Here are some contexts where requesting a GPU is advantageous:
+A **GPU (Graphical Processing Unit)** is a specialized processor designed to perform many simple calculations in parallel. Here are some contexts where requesting a GPU is advantageous (assuming code that is designed to run on GPUs):
 
 - AI/ML *(e.g. training a neural network)*
 - Scientific Computing *(e.g. weather modeling)*
@@ -39,3 +39,9 @@ A **CPU core** is one of many small, yet powerful workers within a **CPU (Centra
 - Big Data Analytics *(e.g. data mining)*
 - Geospatial Analysis and Remote Sensing *(e.g. land cover classification)*
 
+### Images
+When using JupyterHub, researchers can choose from a variety of pre-built images that contain different combinations of software packages and dependencies. But, what is an "image"?
+
+A **(container) image** is like a "ready-to-go box" that contains everything needed to run a program, including software, tools, configurations. TIDE leverages these images to provide individual pre-built environments containing a suite of software packages for tasks like machine learning, genomics, and more.
+
+The *Images* option in the Server Options page allows researchers to quickly spin up a customized computing environment without having to manually install and configure each software package themselves. This saves time and reduces the risk of configuration errors or conflicts between packages.
