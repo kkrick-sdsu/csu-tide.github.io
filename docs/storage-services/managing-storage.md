@@ -153,7 +153,7 @@ This text guide may be supplemented with this recording for [how to use rclone](
 For a full list of available Rclone commands, please see the [official rclone commands](https://rclone.org/commands/) page.
 
 #### Checking Endpoints
-You can check your configured endpoints in Rclone.
+You can check your configured remotes in Rclone.
 Your endpoints are destinations that you can transfer files to and from.
 
 Example command:
@@ -268,7 +268,7 @@ You can remove entire directories from your bucket.
 
 Example command:
 ```bash
-rclone delete s3:kkrick/hello
+rclone delete s3:bucket/directory
 ```
 - *Note*: Replace `bucket` above with your bucket name
 
