@@ -11,11 +11,11 @@ permalink: /storage-services/requesting-storage
 # Requesting Storage
 TIDE object, block and file storage is managed by the TIDE Support team and must be requested.
 
-If you are not sure which storage type to request, please use the [storage type table](storage-services/#comparing-storage-types) as a reference.
+If you are not sure which storage type to request, please use the [storage type table](/storage-services/#comparing-storage-types) as a reference.
 You may also want to look at the [Using Storage](/storage-services/using-storage) guide before requesting storage.
 
 Please follow these steps to request new storage or modification to existing storage:
-1. Navigate to the [TIDE Support Request](https://tide.sdsu.edu/tide-support-request/)
+1. Navigate to the [TIDE Support Request](https://tide.sdsu.edu/tide-support-request/){:target="_blank"}
 1. You should be greeted with the following form:
 ![tide support request form](/images/storage-services/requesting-storage1.png)
 1. Complete the fields "Name", "Email", and "Campus" as appropriate

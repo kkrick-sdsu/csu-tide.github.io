@@ -12,7 +12,7 @@ Batch jobs are computer programs or scripts that are executed automatically in t
 They are typically used for tasks that can be performed repeatedly or over a long period of time, such as data processing, file transfer or model training.
 
 TIDE, as part of the National Research Platform's (NRP) Nautilus Kubernetes cluster, supports scheduling of batch jobs through Kubectl, which is the command line interface (CLI) for interacting with Kubernetes.
-Users wishing to run batch jobs on TIDE will need to [install Kubectl locally](https://kubernetes.io/docs/tasks/tools/#kubectl).
+Users wishing to run batch jobs on TIDE will need to [install Kubectl locally](https://kubernetes.io/docs/tasks/tools/#kubectl){:target="_blank"}.
 
 Kubernetes only runs software containers, so software must be "containerized" before it can be run in a batch job.
 Often you may find that the software that your code relies on already has a container.
@@ -29,7 +29,7 @@ Containers offer many benefits but here we list a few of the most impactful ones
 1. Consistency
     - The same container given the same input will produce the same output.
 
-[Kubernetes](https://kubernetes.io/) is a container platform for "automating deployment, scaling and management of containerized applications." 
+[Kubernetes](https://kubernetes.io/){:target="_blank"} is a container platform for "automating deployment, scaling and management of containerized applications." 
 If you are familiar with more traditional HPC systems, you can think of Kubernetes like a workload manager (i.e. Slurm). 
 Similar to workload managers, Kubernetes allows us to make requests for resources like CPUs, GPUs and memory to run our programs. 
 
@@ -38,18 +38,18 @@ Kubernetes offers several workload management options to package up your code an
 Primarily we recommend Pods, Deployments and Jobs, each of which we describe in the following sub-sections.
 
 ### Pods
-[Pods](https://kubernetes.io/docs/concepts/workloads/pods/) are the foundational Kubernetes compute unit.
+[Pods](https://kubernetes.io/docs/concepts/workloads/pods/){:target="_blank"} are the foundational Kubernetes compute unit.
 Every container is encapsulated in a pod prior to being scheduled and run on the cluster.
 It is important to note that pods are ephemeral and once a pod is deleted everything inside the pod is deleted -- meaning any data downloaded, content generated or files modified.
 Generally used for short jobs or for writing and testing automation scripts prior to moving onto more robust Deployments or Jobs.
 
 ### Deployments
-[Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) allow you to inform Kubernetes of your desired pod state, such as keeping one or more pods running at a given time.
+[Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/){:target="_blank"} allow you to inform Kubernetes of your desired pod state, such as keeping one or more pods running at a given time.
 If something happens that causes a pod to quit unexepectedly, then Kubernetes can take automatic actions to return your pod(s) to the desired state.
 These can be useful for running short-lived services that your computation may require.
 
 ### Jobs
-[Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/) will run your pod(s) until they successfully complete or meet a specified failure count.
+[Jobs](https://kubernetes.io/docs/concepts/workloads/controllers/job/){:target="_blank"} will run your pod(s) until they successfully complete or meet a specified failure count.
 Jobs can be used to run multiple pods in parallel.
 This trait is specifically useful for "simply parallel" workflows such as running the same simulation with differing inputs.
 
@@ -62,7 +62,7 @@ The NRP has also implemented additional logic and limitations on top of the foun
 | **Automatic shutdown**       | Yes, when the maximum runtime has been hit | Yes, when the maximum runtime has been hit (you may receive emails prior to the automatic shutdown) | Yes, when your script, program or linux command has finished |
 | **Never-ending command**     | Yes, may contain a “never-ending” command such as “sleep infinity” | Yes, may contain a “never-ending” command such as “sleep infinity” | No, may not contain a “never-ending” command such as “sleep infinity” |
 | **Interactive start**        | Yes, may be started interactively, such as via remote terminal session | Yes, may be started interactively, such as via remote terminal session | No, computation must start automatically via script or shell command |
-| **Automatic restart**        | No, wll not be restarted automatically in cases such as the node being restarted or otherwise going offline | Yes, will be restarted automatically in cases such as the node being restarted or otherwise going offline | Yes, will be restarted automatically in cases such as the node being restarted or otherwise going offline |
+| **Automatic restart**        | No, will not be restarted automatically in cases such as the node being restarted or otherwise going offline | Yes, will be restarted automatically in cases such as the node being restarted or otherwise going offline | Yes, will be restarted automatically in cases such as the node being restarted or otherwise going offline |
 
 ## Next Steps
 In order to schedule batch jobs on TIDE, you must first complete the steps in the [Getting Access](/batch-jobs/getting-access) guide.

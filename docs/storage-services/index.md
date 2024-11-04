@@ -8,7 +8,7 @@ permalink: /storage-services/
 ---
 
 # Storage Services Overview
-TIDE offers a total of 240 TB of usable storage configured as a [Ceph](https://ceph.io/en/) cluster and made available to Kubernetes via [Rook](https://rook.io/docs/rook/v1.9/ceph-storage.html).
+TIDE offers a total of 240 TB of usable storage configured as a [Ceph](https://ceph.io/en/){:target="_blank"} cluster and made available to Kubernetes via [Rook](https://rook.io/docs/rook/v1.9/ceph-storage.html){:target="_blank"}.
 Ceph "provides a unified storage service with object, block, and file interfaces" which allows researchers to connect to their data in multiple ways.
 
 Storage types on TIDE include the following:
@@ -26,10 +26,10 @@ This means that any data created in one namespace cannot be accessed in another 
 For this reason, we recommend that *project data be stored in object storage* and then transferred as needed into one of the other storage types for processing.
 
 Kubernetes has several access modes for data storage, but TIDE supports ReadWriteOnce (RWO) and ReadWriteMany (RWX).
-ReadWriteOnce indicates that a single pod on one node may read and write to the storage at a time.
-ReadWriteMany indicates that many pods on many nodes may read and write to the storage simultaneously.
+- ReadWriteOnce indicates that a single pod on one node may read and write to the storage at a time.
+- ReadWriteMany indicates that many pods on many nodes may read and write to the storage simultaneously.
 
-In the table below we compare the various storage types in the context of the TIDE cluster:
+In the table below, we compare the various storage types in the context of the TIDE cluster:
 
 | Storage Type           | Persistent | Access Mode        | Accessible Outside of Namespace | Example Usage                                        |
 |------------------------|------------|--------------------|---------------------------------|------------------------------------------------------|
@@ -43,11 +43,11 @@ When using TIDE storage it is important to note:
 - TIDE storage is **not** CSU Protected level 1 compliant, nor is it suitable for HIPAA, PID, FISMA, FERPA, or similar regulated and protected data of any kind.
 - TIDE storage is triple-replicated for redundancy, however TIDE storage is **not** backed up.
 - TIDE storage is **not** intended for long-term storage, but rather for short-term storage while data is being generated, transferred, processed or analyzed.
-- The TIDE Support Team reserves the right to **reclaim storage with sufficient notice**, though the notice period is artbitrary based on the size of the data.
+- The TIDE Support Team reserves the right to **reclaim storage with sufficient notice**, though the notice period is arbitrary based on the size of the data.
 
 We highly recommend that:
 - Critical data be backed up externally to the TIDE cluster.
-- Code be stored in a version control system on a remote repository, such as [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/).
+- Code be stored in a version control system on a remote repository, such as [GitHub](https://github.com/){:target="_blank"} or [GitLab](https://about.gitlab.com/){:target="_blank"}.
 
 *Note*: Please check with your university's IT or research staff for approved long-term storage and version control solutions.
 

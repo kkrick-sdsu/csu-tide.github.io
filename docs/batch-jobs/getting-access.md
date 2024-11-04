@@ -14,7 +14,7 @@ A namespace allows its members to share access to containers and data, enabling 
 ## Creating a National Research Platform Portal Account
 The NRP portal will automatically create you an account once you login with your CSU-specific login credentials. Follow these steps to sign into the NRP portal:
 
-1. Navigate to [https://portal.nrp-nautilus.io/](https://portal.nrp-nautilus.io/)
+1. Navigate to [https://portal.nrp-nautilus.io/](https://portal.nrp-nautilus.io/){:target="_blank"}
 1. Click Login in the top right corner
   - ![Nautilus Portal webpage](/images/batch-jobs/gettingaccess1.png)
 1. You will be greeted by a CILogon page
@@ -45,10 +45,10 @@ The NRP portal will automatically create you an account once you login with your
 Congratulations! You now have an NRP account and you're one step closer to running batch jobs on TIDE.
 
 ### NRP Portal tasks:
-1. [Peruse the namespaces](https://portal.nrp-nautilus.io/namespaces-g)
+1. [Peruse the namespaces](https://portal.nrp-nautilus.io/namespaces-g){:target="_blank"}
     - It may be easiest to use your browser's find tool (ctrl + f / cmd + f)
         - ![TIDE Namepaces](/images/batch-jobs/gettingaccess12.png)
-1. [Download your kube config](https://portal.nrp-nautilus.io/authConfig)
+1. [Download your kube config](https://portal.nrp-nautilus.io/authConfig){:target="_blank"}
     - You will need to sign in with CILogon again
     - The file should download and you should see the following screen
         - ![kube config file](/images/batch-jobs/gettingaccess13.png)
