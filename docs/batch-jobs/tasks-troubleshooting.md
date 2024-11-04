@@ -27,7 +27,7 @@ echo hello
 
 ## Common Tasks
 Here is a short list of the common tasks that you might need to do when working with batch jobs and the Kubectl commands to accomplish them.
-For more detailed information and examples, please reference the official [Kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/).
+For more detailed information and examples, please reference the official [Kubectl Quick Reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"}.
 - *Note*: Not all users will have access to all commands and resource types on the TIDE cluster due to security reasons
 
 ### Setting Namespace
@@ -38,6 +38,26 @@ kubectl config set-context nautilus --namespace=[your-namespace-here]
 ```
 - Example command: `kubectl config set-context nautilus --namespace=csu-example`
 - Example output: `Context "nautilus" modified.`
+
+### Targeting TIDE
+TIDE hardware is both labeled and tainted to provide a way to target the hardware and reserve portions for CSU exclusive use.
+In Kubernetes a "taint" is a way to prevent a job from scheduling on a node unless the job specifically "tolerates" the taint on the node.
+You will need to add the following YAML to the `spec` of pods, deployments and jobs to target TIDE-labeled hardware and tolerate the TIDE taint.
+
+```yaml
+spec:
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+          - key: nautilus.io/csu-tide
+            operator: Exists
+  tolerations:
+  - effect: NoSchedule
+    key: nautilus.io/csu-tide
+    operator: Exists
+```
 
 ### Scheduling Batch Jobs
 At the start of a workflow, you will want to schedule batch jobs onto the cluster using a Kubernetes YAML file that defines your batch job:
@@ -141,7 +161,7 @@ This section offers some commands that may help you identify the various issues 
 Below is a non-exhuastive list of issues that you may encounter:
 
 - Syntax errors
-    - Generally Kubectl will warn you if you have a syntax issue in your YAML files
+    - Generally, Kubectl will warn you if you have a syntax issue in your YAML files
 - FailedAttachVolume
     - Your persistent storage from a PersistentVolumeClaim could not attach to your pod for one of several reasons (I.E. already attached to another pod with read-write once mode)
 - FailedScheduling

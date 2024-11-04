@@ -27,19 +27,19 @@ Recipes will typically have the following structure:
 The recipes assume that you have:
 - Completed the [Getting Access](/batch-jobs/getting-access) guide
 - Completed the [Getting Started](/batch-jobs/getting-started) guide
-- Installed [Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+- Installed [Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl){:target="_blank"}
 - Familiarity with the Linux terminal
 - A preferred text editor
-- Exposure to [git source control](https://git-scm.com/)
+- Exposure to [git source control](https://git-scm.com/){:target="_blank"}
 
 ## Where to Get the Recipes
-The recipes are hosted on the CSU TIDE GitHub organization in the [Kubernetes Recipes](https://github.com/csu-tide/k8s-recipes/) repository.
+The recipes are hosted on the CSU TIDE GitHub organization in the [Kubernetes Recipes](https://github.com/csu-tide/k8s-recipes/){:target="_blank"} repository.
 We host the recipes on GitHub so that they can be easily accessed, viewed and modified.
 Users do not need to create a GitHub account to **access** and **view** the recipes.
 However, if you are working with code and collaborating with others, we would encourage you to consider creating an account.
 
 We also welcome suggestions, improvements and new recipes! Note that the following may require a GitHub account.
-- For suggestions and improvements, feel free to [open an issue on the repository](https://github.com/csu-tide/k8s-recipes/issues)
-- If you would like to submit a new recipe, please create a fork of the repository, commit your changes and then [send us a pull request](https://github.com/csu-tide/k8s-recipes/pulls).
+- For suggestions and improvements, feel free to [open an issue on the repository](https://github.com/csu-tide/k8s-recipes/issues){:target="_blank"}
+- If you would like to submit a new recipe, please create a fork of the repository, commit your changes and then [send us a pull request](https://github.com/csu-tide/k8s-recipes/pulls){:target="_blank"}.
 
 For general support inquires not specifically related to these recipes, please continue to use the [TIDE Support form](https://tide.sdsu.edu/tide-support-request/){:target="_blank"}.

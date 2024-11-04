@@ -19,10 +19,10 @@ Once you have completed this you should be able to:
 ## Prerequisites
 This documentation assumes that you have:
 - Completed the [Getting Access](/batch-jobs/getting-access) guide
-- Installed [Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl)
+- Installed [Kubectl](https://kubernetes.io/docs/tasks/tools/#kubectl){:target="_blank"}
 - Familiarity with the Linux terminal
 - A preferred text editor
-- Exposure to [git source control](https://git-scm.com/)
+- Exposure to [git source control](https://git-scm.com/){:target="_blank"}
 
 ## Running Your First Batch Job on TIDE
 
@@ -31,7 +31,7 @@ Follow these steps to get a copy of the repository cloned to your local machine 
 
 1. From your local machine, pull up a terminal window and run this command to get a copy of the repository:
     - `git clone https://github.com/csu-tide/hello-csu.git`
-    - *Note*: If you do not have git installed, you can [download this repository](https://github.com/csu-tide/hello-csu/archive/refs/heads/main.zip) and then un-zip it instead
+    - *Note*: If you do not have git installed, you can [download this repository](https://github.com/csu-tide/hello-csu/archive/refs/heads/main.zip){:target="_blank"} and then un-zip it instead
 1. Open the respository in your preferred text editor and inspect the files
 1. Open the `hello.py` file; you should see the following:
     ```python
@@ -68,7 +68,7 @@ Follow these steps to get a copy of the repository cloned to your local machine 
 
     CMD ["python3", "hello.py"]
     ```
-    - This is a [Dockerfile](https://docs.docker.com/engine/reference/builder/) which defines a container image
+    - This is a [Dockerfile](https://docs.docker.com/engine/reference/builder/){:target="_blank"} which defines a container image
     - This container image is based on the Python 3 image and it copies our `hello.py` program into the container and then runs it
     - For more information on creating a custom container image, see our [Container Creation](/container-creation) section
 1. Open the Kubernetes manifest file `hello-pod.yaml`; you should see the following:
@@ -102,7 +102,7 @@ Follow these steps to get a copy of the repository cloned to your local machine 
           key: nautilus.io/csu-tide
           operator: Exists
     ```
-    - Kubernetes manifests are defined in the [YAML file format](https://en.wikipedia.org/wiki/YAML)
+    - Kubernetes manifests are defined in the [YAML file format](https://en.wikipedia.org/wiki/YAML){:target="_blank"}
     - At first glance there is a lot going on in this file, but for now we will focus on these three things:
         1. `kind: Pod`
             - This specifies the kind of Kubernetes workload management object, in this case a simple pod
@@ -118,8 +118,8 @@ Follow these steps to get a copy of the repository cloned to your local machine 
 
 Now that we have examined the files, let's talk about how this all comes together.
 First, we have the simple Python program `hello.py`, which we could execute on any machine with Python 3 installed. 
-Then we take that Python program and put it into a container image with the `Dockerfile`, which is based on the [Python 3 image](https://hub.docker.com/_/python/) and thus has Python 3 pre-installed. 
-At this point we can build the container image or, as in this example, use the [pre-built image](https://github.com/orgs/csu-tide/packages/container/package/hello-csu). 
+Then we take that Python program and put it into a container image with the `Dockerfile`, which is based on the [Python 3 image](https://hub.docker.com/_/python/){:target="_blank"} and thus has Python 3 pre-installed. 
+At this point we can build the container image or, as in this example, use the [pre-built image](https://github.com/orgs/csu-tide/packages/container/package/hello-csu){:target="_blank"}. 
 Lastly, we wrap this container in a Kubernetes pod in the `hello-pod.yaml`. 
 
 At this point, we have everything we need in order to schedule this pod on the TIDE cluster. 
