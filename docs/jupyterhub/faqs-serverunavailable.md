@@ -22,4 +22,4 @@ When you encounter the message above, **click the *Restart* button** to regain a
 If you dismiss the message, errors will continue to pop-up (because your server has disconnected), restricting access to your notebook environment.
 
 {: .note }
-If you continue to encounter persistent *server unavailable or unreachable* messages despite restarting the server, please [contact TIDE](https://tide.sdsu.edu/){:target="_blank"} for further assistance.
+If you continue to encounter persistent *server unavailable or unreachable* messages despite restarting the server, please [contact TIDE Support](https://tide.sdsu.edu/tide-support-request/){:target="_blank"} for further assistance.

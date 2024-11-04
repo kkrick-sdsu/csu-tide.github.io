@@ -9,18 +9,18 @@ description: ""
 permalink: /jupyterhub/faqs/serveroptions
 ---
 
-{: .note }
-This page is currently under construction. Information will be updated soon.
-
 # Server Options Page
 When starting a new notebook from the Server Options page, there are many options to consider. What do these options mean and how does one select them appropriately? <br>
+
+{: .note }
+**Disclaimer**: This information focuses on the CSU TIDE JupyterHub. Refer to campus-specific information in [Getting Access](/jupyterhub/gettingaccess) as appropriate.
 
 ![Server Options Page](/images/jupyterhub/faq-serveroptions1.png)
 
 # GPUs, CPU Cores, and RAM
 Let's explain what GPUs, CPU Cores, and RAM are and how they can be useful in the context of research and instruction. 
 
-A **GPU (Graphical Processing Unit)** is a specialized processor designed to perform many simple calculations in parallel. Here are some contexts where requesting a GPU is advantageous:
+A **GPU (Graphical Processing Unit)** is a specialized processor designed to perform many simple calculations in parallel. Here are some contexts where requesting a GPU is advantageous (assuming code that is designed to run on GPUs):
 
 - AI/ML *(e.g. training a neural network)*
 - Scientific Computing *(e.g. weather modeling)*
