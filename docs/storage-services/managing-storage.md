@@ -16,7 +16,7 @@ When you no longer need your storage allocation, please use the same request for
 
 This documentation assumes that you are familiar with the content from the [Storage Services](/storage-services/) overview.
 This documentation assumes that you have some experience with the linux command line.
-If you are not familiar with the linux command line, we recommend this [beginner's guide](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview); you can use a terminal in [JupyterHub](/jupyterhub/) to follow along.
+If you are not familiar with the linux command line, we recommend this [beginner's guide](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview){:target="_blank"}; you can use a terminal in [JupyterHub](/jupyterhub/) to follow along.
 
 ## Managing Block and File Storage
 Block and file storage are mounted as linux volumes and can be managed in a similar fashion.
@@ -71,18 +71,18 @@ You could then inspect the directories to see if you still need the data that is
 
 ## Managing Object Storage
 Object storage is managed differently than block and file storage, since it is not mounted as a linux volume.
-TIDE object storage is [S3-compatible](https://en.wikipedia.org/wiki/Amazon_S3#S3_API_and_competing_services), so there are many tools that may be used to manage TIDE object storage.
+TIDE object storage is [S3-compatible](https://en.wikipedia.org/wiki/Amazon_S3#S3_API_and_competing_services){:target="_blank"}, so there are many tools that may be used to manage TIDE object storage.
 TIDE block storage, being S3-compatible, organizes storage into buckets.
 
 ### Checking Usage
-The National Research Platform (NRP) provides a useful [storage page](https://portal.nrp-nautilus.io/storage) that provides a high-level view of the object storage use for TIDE.
+The National Research Platform (NRP) provides a useful [storage page](https://portal.nrp-nautilus.io/storage){:target="_blank"} that provides a high-level view of the object storage use for TIDE.
 This information is updated about once every 24 hours, so there may be a delay.
 You can check when the information was last updated using the "LastChecked" column.
 
 ![TIDE S3 storage usage in terms of gigabytes used by individual buckets](/images/storage-services/managing-storage-1.png)
 
 To access this information follow these steps:
-1. Navigate to the [storage page](https://portal.nrp-nautilus.io/storage)
+1. Navigate to the [storage page](https://portal.nrp-nautilus.io/storage){:target="_blank"}
 1. Sign in using your single sign-on credentials
 1. Click the "Pool" drop down and select "TIDE S3"
 1. Click the tidesupport user
@@ -95,7 +95,7 @@ Rclone's syntax is inspired by linux file management commands, so it may feel so
 
 ### Configuring Rclone
 Assuming that you have requested and been granted TIDE object storage access, you can use the following text guide to configure Rclone on your local computer. 
-This text guide may be supplemented with this [recording for configuring Rclone](https://drive.google.com/file/d/1Xg63oOs7MN5z01HGm5CGCM9o9Vq_-W_w/view?usp=sharing).
+This text guide may be supplemented with this [recording for configuring Rclone](https://drive.google.com/file/d/1Xg63oOs7MN5z01HGm5CGCM9o9Vq_-W_w/view?usp=sharing){:target="_blank"}.
 - *Note*: Rclone is updated frequently and the configuration options may change order, the important thing is to use the "S3 Compliant" and "Ceph object storage" options
 
 1. Start rclone configuration
@@ -149,8 +149,8 @@ This text guide may be supplemented with this [recording for configuring Rclone]
 
 ### Common Rclone Commands
 After configuring Rclone for TIDE object storage, you can use the following commands to transfer and interact with files.
-This text guide may be supplemented with this recording for [how to use rclone](https://drive.google.com/file/d/1nNFGQrpAgnB3NPiKCJZJ1v4rgdrlhnXT/view?usp=sharing).
-For a full list of available Rclone commands, please see the [official rclone commands](https://rclone.org/commands/) page.
+This text guide may be supplemented with this recording for [how to use rclone](https://drive.google.com/file/d/1nNFGQrpAgnB3NPiKCJZJ1v4rgdrlhnXT/view?usp=sharing){:target="_blank"}.
+For a full list of available Rclone commands, please see the [official rclone commands](https://rclone.org/commands/){:target="_blank"} page.
 
 #### Checking Endpoints
 You can check your configured remotes in Rclone.
