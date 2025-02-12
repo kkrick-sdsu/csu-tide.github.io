@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Usage Guidelines
-nav_order: 70
+title: Usage Guidelines Overview
+parent: Usage Guidelines
+nav_order: 10
 has_children: false
 description: ""
-permalink: /usage-guidelines
+permalink: /usage-guidelines/
 ---
 
 # Usage Guidelines
