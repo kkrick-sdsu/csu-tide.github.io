@@ -26,7 +26,7 @@ Conda and Mamba are package and environment management tools primarily used in d
 While both Mamba and Pip are used for package management, they have key differences:
 - **Mamba (or Conda) vs. Pip:**
   - **Mamba** is an environment manager that handles binary packages and dependencies using Conda environments. It ensures package compatibility across different platforms and Python versions.
-  - **Pip** is the default Python package manager, primarily used to install Python packages from the Python Package Index (PyPI). Pip relies on virtual environments (e.g., `venv` or `virtualenv`) for isolation but does not manage dependencies as efficiently as Mamba.
+  - **Pip** is the default Python package manager, primarily used to install Python packages from the Python Package Index (PyPI). Pip does not natively support environment management, but instead relies on virtual environments (e.g., created with `venv` or `virtualenv`) for isolation but does not manage dependencies as efficiently as Mamba.
   - **Dependency Resolution:** Mamba provides more robust dependency resolution compared to Pip, which may run into conflicts when installing packages.
   - **Speed:** Mamba is significantly faster than Pip when solving complex dependencies since it uses a more optimized dependency solver.
 
@@ -42,14 +42,14 @@ You should see the terminal add `(base)` in front of your terminal line, like so
 **Note:** You may modify the base environment, but any changes will be reverted when your notebook server is restarted. If you need a persistent environment read the section [Creating a New Conda Environment](/jupyterhub/environment-management#creating-a-new-conda-environment).
 
 ## Searching for Packages on Anaconda.org
-Anaconda.org is a repository where users can find and download Conda packages.
+[Anaconda.org](https://anaconda.org/) is a repository where users can find and download Conda packages.
 The `conda-forge` channel is a community-driven collection of packages that are regularly updated and maintained.
 We recommend using the conda-forge channel whenever possible.
 
 ### Searching for Packages via Terminal
-To search for packages on Anaconda.org via terminal, you can use the following command:
+To search for packages on via terminal, you can use the following command:
 ```bash
-mamba search [package-name]
+mamba search -c conda-forge [package-name]
 ```
 Example:
 ```bash
@@ -160,7 +160,7 @@ jovyan@jupyter-maztec-40sdsu-2eedu:~$
 
 ## Reusing an Existing Environment
 
-### Open a New Terminal Window
+### Activate Base Environment
 Ensure the base environment is activated:
 ```bash
 source activate base
@@ -172,6 +172,7 @@ mamba env list
 ```
 
 ### Activate Your Desired Environment
+Assuming you are in your base environment, you can activate your desired environment:
 ```bash
 conda activate [name or /path/to/environment]
 ```
@@ -187,7 +188,7 @@ You should see your environment change in the terminal:
 (/home/jovyan/my-env) jovyan@jupyter-maztec-40sdsu-2eedu:~$
 ```
 
-Now, you can run your code in your environment from the terminal.
+Now, you can run your code in your environment from this terminal.
 
 ## Exporting an Environment
 Exporting an environment allows you to save its configuration in a YAML file. This is useful for sharing environments with others or reproducing the same setup on another machine.
