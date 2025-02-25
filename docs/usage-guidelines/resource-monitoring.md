@@ -13,17 +13,17 @@ permalink: /usage-guidelines/resource-monitoring
 This guide will walk you through determining how many resources you should request, what resources are available, and how to monitor your resource consumption once running.
 Once you have completed this guide you should be able to:
 - Determine the resources you should be requesting
-- View available resources on the Nautilus website
+- View available resources on the [Nautilus portal](portal.nrp-nautilus.io/resources)
 - View the CPU and GPU resources you are consuming on Grafana
 
 ## Prerequisites
 
 This documentation assumes that you have:
-- Completed the [Getting Access](/batch-jobs/getting-access) guide
+- Completed either the [JupyterHub](/jupyterhub/gettingaccess) or [Batch Jobs](/batch-jobs/getting-access) Getting Access guide
 
 ## Minimum, average, and maximum resource usage
 
-All software requires _some_ computer hardware resources to run properly. Since the computer hardware in Nautilus' cluster is a finite resource, it's extremely important to request only the resources that your application needs. If your request is too large, it may not be scheduled on the cluster; too small, and your application may not run properly. Determining the correct resource request requires a good understanding of your applications' [minimum](#minimum-resource-usage) and [average](#averageruntime-resource-usage) resource consumption. More details can be found on [Nautilus' memory allocation policies](https://docs.nationalresearchplatform.org/userdocs/start/policies/#memory-allocation){:target="_blank"}. 
+All software requires _some_ computer hardware resources to run properly. Since the computer hardware in the cluster is a finite resource, it's extremely important to request only the resources that your application needs. If your request is too large, it may not be scheduled on the cluster; too small, and your application may not run properly. Determining the correct resource request requires a good understanding of your applications' [minimum](#minimum-resource-usage) and [average](#averageruntime-resource-usage) resource consumption. More details can be found on [Nautilus' memory allocation policies](https://docs.nationalresearchplatform.org/userdocs/start/policies/#memory-allocation){:target="_blank"}. 
 
 ### Minimum resource usage
 
@@ -37,20 +37,11 @@ As you begin to use your application it will consume more resources. A great exa
 
 This applies to the CPU side as well: any additional operation on top of running your application will require additional CPU. For example, if you start your application without increasing your CPU from its minimum requirements then try to [compute the millionth digit of pi](http://www.numberworld.org/y-cruncher/) you will likely run out of CPU.
 
-If you'd like to see what resources your application is currently consuming see [monitoring resource consumption](#monitoring-resource-consumption-with-grafana)
+If you'd like to see what resources your application is currently consuming see [monitoring resource consumption](#monitoring-resource-consumption-with-grafana).
 
 ### Maximum resource usage
 
 Maximum resource usage refers to the peak usage over the lifetime of your program. If your program averages 6GBs of memory consumption while running then takes 12GBs for a few seconds to load a new file, your maxiumum resource usage would be 12GB.
-<!-- TODO: Not sure if the above is necessary, but for the sake of verbosity I thought it'd be good to include -->
-
-<!-- ### Common resource requests
-
-Below is a table of common applications and the resources that should be used for it.
-
-Application | CPU | GPU | Memory
-------------|-----|-----|-------
-JupyterHub  | 1   | 1   | 1 -->
 
 ### Does my application need a GPU?
 
@@ -59,7 +50,8 @@ How do you know if your application needs a GPU? CPUs are great for general purp
 ## Available resources on Nautilus
 
 Nautilus provides a [resources](https://portal.nrp-nautilus.io/resources){:target="_blank"} page that outlines all of the nodes in the cluster and their available resources. 
-A node is another word to describe the computer that the servers are running on, with each row in the table corresponding to a node in the Nautilus cluster.
+A node is another word to describe the computer that the servers are running on, with each row in the table corresponding to a node in the Nautilus cluster. 
+If the resources you are requesting are not available, then your job or notebook may not schedule. You can use this resources page to see what is schedulable in real-time.
 
 1. Navigate to [https://portal.nrp-nautilus.io/](https://portal.nrp-nautilus.io/){:target="_blank"}.
 1. Click on the Resources tab.
@@ -80,11 +72,13 @@ This section of the guide requires knowledge of the **namespace** and **pod name
 
 ### Finding namespace and pod names
 
-For SDSU JupyterHub users: your namespace will be sdsu-rci-jh and your pod name will start with the email you used to log in.
-<!-- TODO: Convert to table, add more details -->
+Service | Namespace | Pod name template | Pod name example
+--------|-----------|-------------------|-----------------
+CSU TIDE JupyterHub | csu-tide-jupyterhub | jupyter-[SSO-ID-URL-Encoded] | jupyter-abc12-40humboldt-2eedu
+SDSU Research JupyterHub | sdsu-rci-jh | jupyter-[SDSUid-prefix]-40sdsu-2eedu | jupyter-kkrick-40sdsu-2eedu
 
 ### Monitoring CPU/Memory consumption
-1. Navigate to the Nautilus [namespace dashboard](https://grafana.nrp-nautilus.io/d/85a562078cdf77779eaa1add43ccec1e/kubernetes-compute-resources-namespace-pods){:target="_blank"}.
+1. Navigate to the Nautilus [CPU/memory dashboard](https://grafana.nrp-nautilus.io/d/85a562078cdf77779eaa1add43ccec1e/kubernetes-compute-resources-namespace-pods){:target="_blank"}.
 1. You will see an empty page showing "No Data." This is because we haven't entered a namespace yet. Enter your namespace in the box near the top. 
   - ![Grafana selecting namespace](/images/usage-guidelines/resourcemonitoring_cpu1.png)
 1. Once your namespace is selected, you can see all the pods running in that namespace- highlighted in the box on the right.
@@ -92,5 +86,11 @@ For SDSU JupyterHub users: your namespace will be sdsu-rci-jh and your pod name 
 1. Scroll down slightly and find your pod name in the box highlighted red, you may need to scroll or sort alphabetically to help your search. Selecting your pod name will take you to a page that only contains your pods information.
   - ![Grafana pod selection](/images/usage-guidelines/resourcemonitoring_cpu3.png)
 
-
 For more information, including documentation on determining usage with Tensorboard, see [Nautilus' monitoring documentation](https://docs.nationalresearchplatform.org/userdocs/running/monitoring/){:target="_blank"}.
+
+### Monitoring GPU consumtion
+1. Navigate to the Nautlius [GPU dashboard](https://grafana.nrp-nautilus.io/d/dRG9q0Ymz/k8s-compute-resources-namespace-gpus?orgId=1&from=now-30m&to=now&timezone=browser&refresh=30s){:target="_blank"}
+1. The page might be populated with data that you're not interested in. Make sure your namespace is selected in the top left
+  - ![Grafana selecting namespace](/images/usage-guidelines/resourcemonitoring_gpu1.png)
+1. Scroll down slightly and find your pod name in the box highlighted red, you may need to scroll or sort alphabetically to help your search. Selecting your pod name will take you to a page that only contains your pods information.
+  - ![Grafana pod selection](/images/usage-guidelines/resourcemonitoring_gpu2.png)
