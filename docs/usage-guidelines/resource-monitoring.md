@@ -13,7 +13,7 @@ permalink: /usage-guidelines/resource-monitoring
 This guide will walk you through determining how many resources you should request, what resources are available, and how to monitor your resource consumption once running.
 Once you have completed this guide you should be able to:
 - Determine the resources you should be requesting
-- View available resources on the [Nautilus portal](portal.nrp-nautilus.io/resources)
+- View available resources on the [Nautilus portal](https://portal.nrp-nautilus.io/resources){:target="_blank"}
 - View the CPU and GPU resources you are consuming on Grafana
 
 ## Prerequisites
@@ -64,7 +64,7 @@ If the resources you are requesting are not available, then your job or notebook
 
 ## Monitoring resource consumption with Grafana
 
-With [Grafana](https://grafana.nrp-nautilus.io/), you can observe your namespace's resource consumption.
+With [Grafana](https://grafana.nrp-nautilus.io/){:target="_blank"}, you can observe your namespace's resource consumption.
 
 ### Prerequisites
 
