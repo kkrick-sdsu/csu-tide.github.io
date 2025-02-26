@@ -26,7 +26,7 @@ Conda and Mamba are package and environment management tools primarily used in d
 While both Mamba and Pip are used for package management, they have key differences:
 - **Mamba (or Conda) vs. Pip:**
   - **Mamba** is an environment manager that handles binary packages and dependencies using Conda environments. It ensures package compatibility across different platforms and Python versions.
-  - **Pip** is the default Python package manager, primarily used to install Python packages from the Python Package Index (PyPI). Pip does not natively support environment management, but instead relies on virtual environments (e.g., created with `venv` or `virtualenv`) for isolation but does not manage dependencies as efficiently as Mamba.
+  - **Pip** is the default Python package manager, primarily used to install Python packages from the Python Package Index (PyPI). Pip does not natively support environment management, but instead relies on virtual environments (e.g., created with the `venv` or `virtualenv` packages) for isolation. Pip does not manage dependencies as efficiently as Mamba.
   - **Dependency Resolution:** Mamba provides more robust dependency resolution compared to Pip, which may run into conflicts when installing packages.
   - **Speed:** Mamba is significantly faster than Pip when solving complex dependencies since it uses a more optimized dependency solver.
 
