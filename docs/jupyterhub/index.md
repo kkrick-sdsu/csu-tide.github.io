@@ -15,7 +15,7 @@ JupyterHub is the latest web-based interactive development environment for noteb
 
 TIDE JupyterHub users are allocated 50 GB (gigabytes) of JupyterHub storage (campus-specific amounts may differ). If you need additional space, please see [Requesting Storage](/storage-services/requesting-storage). To check your storage in use, refer to the [Check Disk Quota](/jupyterhub/faqs/diskquota) FAQ.
 
-[Launch TIDE JupyterHub](https://csu-tide-jupyterhub.nrp-nautilus.io/){: .btn .btn-green }{:target="_blank"}
+To launch JupyterHub, see [Getting Access](/jupyterhub/gettingaccess).
 
 ## Using JupyterLab
 JupyterLab is a versatile interactive development environment (IDE) widely used for computing and research across various disciplines. It allows users to create and manage Jupyter notebooks, code, and data visualizations in a single interface. TIDE users perform research and develop code in this simple, yet powerful browser-based IDE. 

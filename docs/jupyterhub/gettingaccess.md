@@ -13,7 +13,12 @@ permalink: /jupyterhub/gettingaccess
 ## CSU TIDE JupyterHub
 TIDE is available for research use across the CSU system. To get access, please review [Using TIDE](https://tide.sdsu.edu/usingtide/){:target="_blank"} and submit a [TIDE Support Request](https://tide.sdsu.edu/tide-support-request/){:target="_blank"} to be granted access to JupyterHub.
 
-Once a support request is submitted and reviewed, a member of the TIDE team will reach out with next-steps to complete the set up. Refer to the [Quickstart](/jupyterhub/quickstart) once this process is completed.
+Once a support request is submitted and reviewed, a member of the TIDE team will reach out with next-steps to complete the set up. Once this process is completed, refer to the [Quickstart](/jupyterhub/quickstart) guide and use one of the launch options below.
+
+{: .note }
+Your school credentials may not work when using the following button, check for a [campus specific JupyterHub](#campus-specific-jupyterhubs) for your school before submitting a help ticket.
+
+[Launch TIDE JupyterHub](https://csu-tide-jupyterhub.nrp-nautilus.io/){: .btn .btn-green }{:target="_blank"}
 
 ## Campus-Specific JupyterHubs
 
