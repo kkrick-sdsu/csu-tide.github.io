@@ -1,7 +1,11 @@
 ---
-layout: post
-title:  "JupyterHub Release Notes 2025-03-13"
-date:   2025-03-13
+layout: default
+title: JupyterHub 2025-03-13
+parent: Release Notes
+nav_order: 10
+has_children: false
+description: ""
+permalink: /release-notes/jupyterhub/2025-03-13
 ---
 # JupyterHub Release Notes: 2025-03-13
 We will be releasing the next version of JupyterHub for the following instances:
