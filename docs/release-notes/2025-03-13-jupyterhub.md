@@ -9,15 +9,15 @@ permalink: /release-notes/jupyterhub/2025-03-13
 ---
 # JupyterHub Release Notes: 2025-03-13
 We will be releasing this version of JupyterHub for the following instances:
-- [CSU TIDE JupyterHub](https://csu-tide-jupyterhub.nrp-nautilus.io/)
-- [SDSU Research JupyterHub](https://jupyterhub-research.sdsu.edu/)
+- [CSU TIDE JupyterHub](https://csu-tide-jupyterhub.nrp-nautilus.io/){:target="_blank"}
+- [SDSU Research JupyterHub](https://jupyterhub-research.sdsu.edu/){:target="_blank"}
 
 ## Improvements
 
 ### Updated JupyterHub to version 5.2.1
 We have upgraded JupyterHub to version 5.2.1.
 This version applies security fixes, bug fixes and new features.
-See the official [release notes for JupyterHub to version 5.2.1](https://jupyterhub.readthedocs.io/en/stable/reference/changelog.html#id3).
+See the official [release notes for JupyterHub to version 5.2.1](https://jupyterhub.readthedocs.io/en/stable/reference/changelog.html#id3){:target="_blank"}.
 
 ### Updated notebook images
 We have upgraded all of the notebook container images for compatibility with the latest version of JupyterHub.
@@ -50,7 +50,7 @@ This includes: CPUs, RAM, number & type of GPUs, and notebook container image.
 
 ### Bring your own container image
 Using the new "Other" option for the Notebook Container Image field will allow you to enter a Docker image URI.
-Your custom container image must be based on one of the [Jupyter Docker Stack images](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html) after the minimal notebook (see [image relationships](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#image-relationships) for more information).
+Your custom container image must be based on one of the [Jupyter Docker Stack images](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html){:target="_blank"} after the minimal notebook (see [image relationships](https://jupyter-docker-stacks.readthedocs.io/en/latest/using/selecting.html#image-relationships){:target="_blank"} for more information).
 - *Note*: Your base image should be built on or after 2024-07-29 for compatibility with the new version of JupyterHub
 
 ## Deprecations
@@ -58,13 +58,13 @@ Your custom container image must be based on one of the [Jupyter Docker Stack im
 ### Old notebook container images
 The previous set of notebook container images are now imcompatible with this version of JupyterHub due to a change in process for granting sudo access.
 As a result, we are unable to offer a workaround for running the old notebook container images on the new version of JupyterHub.
-We have published a repository with these [deprecated notebook container images](https://github.com/csu-tide/deprectated-notebook-images) including the URI for the notebook container image and the conda environment files.
+We have published a repository with these [deprecated notebook container images](https://github.com/csu-tide/deprectated-notebook-images){:target="_blank"} including the URI for the notebook container image and the conda environment files.
 
 If your code or project does not work with the new notebook container images, then you have two options:
 1. Run the old notebook container image as a batch job
 1. Attempt to recreate the conda environments in the new notebook container images
 
-Both of these options are documented in greater detail in the [deprecated notebook container images](https://github.com/csu-tide/deprectated-notebook-images) repository.
+Both of these options are documented in greater detail in the [deprecated notebook container images](https://github.com/csu-tide/deprectated-notebook-images){:target="_blank"} repository.
 
 ### Stack PRP Notebook 
 The Stack PRP Notebook has been discontinued by the developers and we recommend using the new PyTorch notebook as a replacement.
