@@ -25,9 +25,6 @@ All users start with **50 GB of storage** within the CSU TIDE JupyterHub ([see c
 1. Read and accept the AUP policy from the home page
 
 ## NRP Attribution
-In addition to the above mentioned guidelines for usage of the TIDE cluster, **all users who publish works with use of TIDE** must include the following attribution to the NRP:
+In addition to the above mentioned guidelines for usage of the TIDE cluster, **all users who publish works with use of TIDE** must include the following attribution to the NRP and TIDE:
 
-> *"This work used resources available through the National Research Platform (NRP) at the
-University of California, San Diego. NRP has been developed, and is supported in part, by funding
-from National Science Foundation, from awards 1730158, 1540112, 1541349, 1826967,
-2112167, 2100237, and 2120019, as well as additional funding from community partners"*
+> *"This research utilized resources provided by the National Research Platform (NRP) at the University of California, San Diego. The NRP is supported in part by the National Science Foundation through awards 1730158, 1540112, 1541349, 1826967, 2112167, 2100237, and 2120019, along with additional contributions from community partners. This work also benefited from resources supported by the NSF TIDE award 2346701"*
