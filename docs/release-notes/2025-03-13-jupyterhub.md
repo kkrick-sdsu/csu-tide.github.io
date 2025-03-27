@@ -9,13 +9,15 @@ permalink: /release-notes/jupyterhub/2025-03-13
 ---
 # JupyterHub Release Notes: 2025-03-13
 We will be releasing the next version of JupyterHub for the following instances:
-- CSU TIDE JupyterHub
-- SDSU Research JupyterHub
+- [CSU TIDE JupyterHub]()
+- [SDSU Research JupyterHub]()
 
 ## Improvements
 
-### Updated JupyterHub to version x.x
-We have upgraded JupyterHub to version x.x.
+### Updated JupyterHub to version 5.2.1
+We have upgraded JupyterHub to version 5.2.1.
+This version applies security fixes, bug fixes and new features.
+See the official [release notes for JupyterHub to version 5.2.1](https://jupyterhub.readthedocs.io/en/stable/reference/changelog.html#id3).
 
 ### Updated notebook images
 We have upgraded all of the notebook container images for compatibility with the latest version of JupyterHub.
@@ -37,6 +39,10 @@ Research groups may now ask for access to shared storage which will allow member
 Shared storage will be mounted at the path /home/jovyan/shared and will be named as requested, though we recommend short names for convenience.
 - For example: `/home/jovyan/shared/rci`
 - *Note*: Shared storage is not permitted to be used for installing packages via pip, conda or mamba, as a high volume of small files will degrade performance for all users.
+
+### Shared memory
+We have enabled share memory for applications that require this for distributed processing.
+The amount of shared memory will be equal to the amount of RAM requested on the server start form.
 
 ### Group-based spawning
 We can provide additional "profiles" for research labs or groups that override the options on the default profile.
