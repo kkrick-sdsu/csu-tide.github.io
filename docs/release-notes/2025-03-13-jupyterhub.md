@@ -8,9 +8,9 @@ description: ""
 permalink: /release-notes/jupyterhub/2025-03-13
 ---
 # JupyterHub Release Notes: 2025-03-13
-We will be releasing the next version of JupyterHub for the following instances:
-- [CSU TIDE JupyterHub]()
-- [SDSU Research JupyterHub]()
+We will be releasing this version of JupyterHub for the following instances:
+- [CSU TIDE JupyterHub](https://csu-tide-jupyterhub.nrp-nautilus.io/)
+- [SDSU Research JupyterHub](https://jupyterhub-research.sdsu.edu/)
 
 ## Improvements
 
