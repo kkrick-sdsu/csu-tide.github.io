@@ -32,6 +32,16 @@ The notebook container images have been collapsed into a dropdown instead of a (
 We have added the "Other" option to support users who wish to build and bring their own containers.
 ![JupyterHub start form](/images/release-notes/2025-03-13/start-form.png)
 
+## Changes
+
+### Maximum inactivity time
+To address concerns brought to our attention by the National Research Platform (NRP) team, we have shortened the maximum inactivity time from 48 hours to 12 hours.
+Inactivity means that there is not a web browser tab actively interacting with a notebook server via terminal, notebook or desktop.
+This change does __not__ affect the maximum runtime, currently unlimited.
+This change may also help with increasing GPU availability as many GPUs were being requested, but not used, for extended periods of time.
+
+If this change hinders your computation, please consider using [batch jobs](/batch-jobs/) which are intended for longer running jobs and do not require user interactivity to continue running.
+
 ## New Features
 
 ### Shared storage
