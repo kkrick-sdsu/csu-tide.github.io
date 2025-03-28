@@ -1,0 +1,17 @@
+Available images process:
+
+- All links must have target=_blank
+
+Software column:
+- Parent container
+- Anything not a package (VS Code)
+- Packages/cli tools should be in alphabetical order
+  - No line breaks per package here
+
+Convert packages list to markdown prompt:
+can you give me this list in alphabetical order with markdown bold using __ __, <br/> line breaks in between, following the case of the input. These elements are entered into a table so I'll need them all on one line. I'll need it in raw format so I can copy and paste easily
+
+Proposed next steps:
+- Move non-python packages to below the parent container in the software column
+- Replace line breaks in packages section with spaces
+- Graphs
