@@ -53,6 +53,9 @@ Nautilus provides a [resources](https://portal.nrp-nautilus.io/resources){:targe
 A node is another word to describe the computer that the servers are running on, with each row in the table corresponding to a node in the Nautilus cluster. 
 If the resources you are requesting are not available, then your job or notebook may not schedule. You can use this resources page to see what is schedulable in real-time.
 
+{: .note }
+The true CPU count you can reserve will be 2 less than what is shown, this is because each node reserves 2 CPUs for [batch jobs](/batch-jobs/) with partial CPU requests. Available RAM and GPU will be exactly as listed. 
+
 1. Navigate to [https://portal.nrp-nautilus.io/](https://portal.nrp-nautilus.io/){:target="_blank"}.
 1. Click on the Resources tab.
   - ![Nautilus homepage](/images/usage-guidelines/resourcemonitoring1.png)
