@@ -95,7 +95,7 @@ Rclone's syntax is inspired by linux file management commands, so it may feel so
 
 ### Configuring Rclone
 Assuming that you have requested and been granted TIDE object storage access, you can use the following text guide to configure Rclone on your local computer. 
-This text guide may be supplemented with this [recording for configuring Rclone](https://drive.google.com/file/d/1Xg63oOs7MN5z01HGm5CGCM9o9Vq_-W_w/view?usp=sharing){:target="_blank"}.
+This text guide may be supplemented with this [recording for configuring Rclone](https://www.youtube.com/playlist?list=PLZtvz1oKdirpYX69VIK0ZEPT--dTZjwCS){:target="_blank"}.
 - *Note*: Rclone is updated frequently and the configuration options may change order, the important thing is to use the "S3 Compliant" and "Ceph object storage" options
 
 1. Start rclone configuration
