@@ -54,9 +54,10 @@ spec:
           - key: nautilus.io/csu-tide
             operator: Exists
   tolerations:
-  - effect: NoSchedule
-    key: nautilus.io/csu-tide
-    operator: Exists
+  - key: nautilus.io/reservation
+    operator: Equal
+    value: csu-tide
+    effect: NoSchedule
 ```
 
 ### Scheduling Batch Jobs
