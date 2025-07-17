@@ -98,9 +98,10 @@ Follow these steps to get a copy of the repository cloned to your local machine 
               - key: 'nautilus.io/csu-tide'
                 operator: Exists
       tolerations:
-        - effect: NoSchedule
-          key: nautilus.io/csu-tide
-          operator: Exists
+        - key: nautilus.io/reservation
+          operator: Equal
+          value: csu-tide
+          effect: NoSchedule
     ```
     - Kubernetes manifests are defined in the [YAML file format](https://en.wikipedia.org/wiki/YAML){:target="_blank"}
     - At first glance there is a lot going on in this file, but for now we will focus on these three things:
